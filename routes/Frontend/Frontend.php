@@ -37,6 +37,7 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Route::group(['middleware' => 'auth'], function () {
+	Route::get('/', 'Workbook\WorkbookController@index')->name('index');
    // Route::group(['namespace' => 'Workbook', 'as' => 'workbook.'], function () {
         /*
          * Workbook Specific

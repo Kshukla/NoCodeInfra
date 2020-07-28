@@ -25,6 +25,10 @@ $('.jsonstring').bind('input propertychange', function() {
 	this.value = jsonString.replace(/"/g, "\'");
 });
 
+//its for default resource name of region
+$('select[name="region"]').change(function(){
+	$("#region_name").val( $(this). children("option:selected"). text());
+});
 
 check_valid_cidr();
 function check_valid_cidr(){

@@ -44,7 +44,7 @@ return [
 					'name' => 'rc_name',
 					'type' => 'text',
 					'value' => '',
-					'attr' => ['class' => 'form-control box-size mi-rc_name', 'id' => '', 'placeholder' => 'Region Name', 'required' => 'required']
+					'attr' => ['class' => 'form-control box-size mi-rc_name', 'id' => 'region_name', 'placeholder' => 'Region Name', 'required' => 'required', 'readonly' => 'readonly']
 				],
 				[
 					'title' => 'Region',
